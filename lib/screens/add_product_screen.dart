@@ -33,7 +33,7 @@ class _AgregarProductoScreenState extends State<AgregarProductoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        title: Text('Agregar Producto'),
       ),
       body: Center(child: new 
       ListView(
