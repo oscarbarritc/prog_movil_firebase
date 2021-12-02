@@ -1,3 +1,5 @@
+import 'package:firebase/screens/chat_screen.dart';
+
 import 'package:firebase/screens/products_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +38,18 @@ class MyApp extends StatelessWidget {
                  
               , 
               icon: Icon(Icons.add)
+            ),
+            IconButton(
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ChatBotScreen()));
+                      
+              }
+                 
+              , 
+              icon: Icon(Icons.chat)
             )
           ],
         ),
